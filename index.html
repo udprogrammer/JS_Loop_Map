@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    //for Loop
+    for (let index = 0; index < 5; index++) {
+      console.log(index);
+    }
+
+    //for Loop
+    const numbers = [6, 7, 8, 9, 10];
+    for (let index = 0; index < numbers.length; index++) {
+      console.log(numbers[index]);
+    }
+
+    //Even Number
+    for (let i = 0; i < 10; i++) {
+      if (i % 2 == 0) {
+        console.log(i, "Even");
+      }
+    }
+
+    //odd Number
+    for (let i = 0; i < 10; i++) {
+      if (i % 2 == 1) {
+        console.log(i, "Odd");
+      }
+    }
+
+    //Map
+    const num = [1, 2, 3, 4, 5];
+    const data = num.map((x) => x * 2);
+    console.log(data);
+
+    //Map squared
+    const num2 = [1, 2, 3, 4, 5];
+    const squared = num2.map((x) => x ** 2);
+    console.log(squared);
+
+    //Array with Object
+    const person = [
+      { name: "Uday", age: 21 },
+      { name: "Rohan", age: 20 },
+      { name: "Soham", age: 19 },
+    ];
+    const names = person.map((x) => x.name);
+    const ages = person.map((x) => x.age);
+    console.log(names);
+    console.log(ages);
+
+    //Even number with map
+    const num3 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    const even = num3.map((x) => (x % 2 == 0 ? x : "odd"));
+    console.log(even);
+  </script>
+</html>
